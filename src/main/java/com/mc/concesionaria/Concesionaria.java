@@ -4,6 +4,8 @@
 
 package com.mc.concesionaria;
 
+import com.mc.concesionaria.igu.Principal;
+
 /**
  *
  * @author Matias
@@ -11,6 +13,9 @@ package com.mc.concesionaria;
 public class Concesionaria {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Principal princi = new Principal();
+        princi.setVisible(true);
+        princi.setLocationRelativeTo(null);
+        
     }
 }
