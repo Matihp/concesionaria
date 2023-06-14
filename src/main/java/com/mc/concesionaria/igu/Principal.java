@@ -35,6 +35,11 @@ public class Principal extends javax.swing.JFrame {
 
         btnAlta.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         btnAlta.setText("Alta automovil");
+        btnAlta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAltaActionPerformed(evt);
+            }
+        });
 
         btnConsulta.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         btnConsulta.setText("Consultar,editar o dar baja");
@@ -97,6 +102,12 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAltaActionPerformed
+        AltaAutomovil alta = new AltaAutomovil();
+        alta.setVisible(true);
+        alta.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnAltaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
