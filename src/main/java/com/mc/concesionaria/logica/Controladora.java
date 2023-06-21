@@ -4,10 +4,6 @@
  */
 package com.mc.concesionaria.logica;
 
-/**
- *
- * @author Matias
- */
 public class Controladora {
     
 }

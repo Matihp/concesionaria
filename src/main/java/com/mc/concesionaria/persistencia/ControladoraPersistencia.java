@@ -4,10 +4,6 @@
  */
 package com.mc.concesionaria.persistencia;
 
-/**
- *
- * @author Matias
- */
 public class ControladoraPersistencia {
     
 }
