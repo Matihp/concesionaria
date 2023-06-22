@@ -181,7 +181,12 @@ public class AltaAutomovil extends javax.swing.JFrame {
     }//GEN-LAST:event_tfMarcaActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        
+        tfModelo.setText("");
+        tfMarca.setText("");
+        tfMotor.setText("");
+        tfColor.setText("");
+        tfPatente.setText("");
+        tfCantPuertas.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
@@ -191,6 +196,8 @@ public class AltaAutomovil extends javax.swing.JFrame {
         String color=tfColor.getText();
         String patente=tfPatente.getText();
         int cantPuertas=Integer.parseInt(tfCantPuertas.getText()) ;
+        
+        contro.agregar(modelo,marca,motor,color,patente,cantPuertas);
     }//GEN-LAST:event_btnAgregarActionPerformed
 
 

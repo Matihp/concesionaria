@@ -4,6 +4,14 @@
  */
 package com.mc.concesionaria.persistencia;
 
+import com.mc.concesionaria.logica.Automovil;
+
 public class ControladoraPersistencia {
+    
+    AutomovilJpaController jpa = new AutomovilJpaController();
+
+    public void agregar(Automovil auto) {
+        jpa.create(auto);
+    }
     
 }
